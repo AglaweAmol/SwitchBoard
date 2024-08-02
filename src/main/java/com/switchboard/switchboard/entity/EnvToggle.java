@@ -14,14 +14,6 @@ public class EnvToggle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "toggle_id", nullable = false)
-    private Toggle toggle;
-
-    @ManyToOne
-    @JoinColumn(name = "environment_id", nullable = false)
-    private Environment environment;
-
     @Column(nullable = false)
     private boolean status;
 }
