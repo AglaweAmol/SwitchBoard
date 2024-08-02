@@ -2,7 +2,6 @@ package com.switchboard.switchboard.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
 
 @Data
