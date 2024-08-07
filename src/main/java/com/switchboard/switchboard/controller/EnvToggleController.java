@@ -14,7 +14,7 @@ public class EnvToggleController {
     @Autowired
     private EnvToggleService envToggleService;
 
-    @PostMapping
+    @PostMapping("/createEnvToogle")
     public EnvToggle createEnvToggle(@RequestParam Long toggleId, @RequestParam Long environmentId, @RequestParam boolean status) {
         return envToggleService.createEnvToggle(toggleId, environmentId, status);
     }

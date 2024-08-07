@@ -27,7 +27,7 @@ public class ToggleController {
         return new ResponseEntity<>(toggleService.createToggle(toggleDTO), HttpStatus.CREATED);
     }
 
-    @GetMapping("/toggle/{id}")
+    @GetMapping("/{id}")
     private ResponseEntity<ToggleDTO> getToggleById(@PathVariable(name="id") long id)
     {
         return ResponseEntity.ok(toggleService.getToggleById(id));
